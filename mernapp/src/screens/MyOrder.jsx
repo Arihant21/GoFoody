@@ -6,7 +6,7 @@ export const MyOrder = () => {
   const [orderData, setOrderData] = useState(null)
 
   const fetchMyOrder = async () => {
-    const res = await fetch("http://localhost:5000/api/myOrderData", {
+    const res = await fetch("https://my-gofoody-backend.onrender.com/api/myOrderData", {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email: localStorage.getItem('userEmail') })
