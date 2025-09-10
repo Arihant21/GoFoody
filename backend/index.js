@@ -6,7 +6,7 @@ const app = express();
 const port = process.env.PORT || 5000; // get from .env
 
 app.use((req, res, next)=>{
-  res.setHeader("Access-Control-Allow-Origin", "https://gofoodyarihant.netlify.app/");
+  res.setHeader("Access-Control-Allow-Origin", "https://gofoodyarihant.netlify.app");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
